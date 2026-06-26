@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Play PATHFINDER, a career discovery game from Classrooms to Careers.">
+  <title>PATHFINDER | Classrooms to Careers</title>
+  <link rel="icon" href="../assets/logo.png">
+  <link rel="stylesheet" href="./pathfinder.css">
+  <script src="./pathfinder.js" defer></script>
+</head>
+<body>
+  <header class="game-header">
+    <a class="game-brand" href="../" aria-label="Back to Classrooms to Careers">
+      <img src="../assets/logo.png" alt="">
+      <span>Classrooms to Careers</span>
+    </a>
+    <button class="quiet-button" id="restart-top" type="button">Start over</button>
+  </header>
+
+  <main class="game-shell">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <section class="game-stage" id="pathfinder-app" aria-live="polite"></section>
+  </main>
+
+  <template id="intro-template">
+    <div class="screen intro-screen">
+      <div class="intro-mark"><i></i><span>PATHFINDER</span></div>
+      <p class="kicker">A career discovery game</p>
+      <h1>Don’t pick a job.<br><em>Discover how you think.</em></h1>
+      <p class="intro-copy">Five quick choices will uncover what energizes you. Then you’ll play a real-world challenge built around your strongest match.</p>
+      <div class="track-pills" aria-label="Possible career paths">
+        <span>Healthcare</span><span>Business</span><span>STEM + CS</span>
+      </div>
+      <button class="primary-action" data-action="begin" type="button">Begin the game <b>→</b></button>
+      <small>No wrong answers. About 3 minutes.</small>
+    </div>
+  </template>
+</body>
+</html>
